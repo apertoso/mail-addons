@@ -1,6 +1,6 @@
 {
     'name' : 'Mail relocation',
-    'version' : '1.0.4',
+    'version' : '9.1.0.4',
     'author' : 'IT-Projects LLC, Ivan Yelizariev',
     'license': 'LGPL-3',
     'category' : 'Social Network',
@@ -16,5 +16,5 @@
     'qweb': [
         'static/src/xml/mail_move_message_main.xml',
     ],
-    'installable': False
+    'installable': True
 }
