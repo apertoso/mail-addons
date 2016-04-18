@@ -74,7 +74,10 @@ class wizard(models.TransientModel):
     message_email_from = fields.Char()
     message_name_from = fields.Char()
     # FIXME message_to_read should be True even if current message or any his childs are unread
-    message_to_read = fields.Boolean(related='message_id.to_read')
+    #JPRO
+    # Put in comment as the to_read on mail.message does'nt exist anymore
+    #  message_to_read = fields.Boolean(related='message_id.to_read')
+    message_to_read = fields.Boolean('To read')
     uid = fields.Integer()
     move_followers = fields.Boolean(
         'Move Followers',
